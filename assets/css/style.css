@@ -141,7 +141,7 @@ img{
 @media screen and (max-width: 968px){
     .nav__menu{
         position: fixed;
-        bottom: var(--header-height);
+        bottom: -100%;
         left: 0;
         width: 100%;
         padding: 2rem 1.5rem;
@@ -182,13 +182,24 @@ img{
     font-weight: var(--font-medium);
 }
 
+.nav__link:hover{
+    color: var(--title-color);
+}
 
+.nav__icon{
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-3);
+}
 
 /* Show menu */
-
+.show-menu{
+    bottom: var(--header-height);
+}
 
 /* Active menu link */
-
+.active-link{
+    color: var(--title-color);
+}
 
 /*========== HOME ==========*/
 
